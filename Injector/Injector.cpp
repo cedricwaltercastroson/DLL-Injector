@@ -55,7 +55,7 @@ int APIENTRY wWinMain(_In_     HINSTANCE hInstance,
 					  _In_     int       nCmdShow) {
 
 	const wchar_t* process = L"Game.exe";	// name of the process to inject into
-	startup(process);						// launches the process
+	startup(process);						// launches the process/program
 	int pID = getProcId(process);			// get our process id
 
 	char dll[] = "payload.dll";				// name of the dll file to inject
