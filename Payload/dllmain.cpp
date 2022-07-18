@@ -3,10 +3,11 @@
 #include <Windows.h>
 
 DWORD WINAPI MainThread(LPVOID param) {
-	MessageBoxA(NULL, "DLL injected!", "DLL injected!", MB_OK);
+//	MessageBoxA(NULL, "DLL injected!", "DLL injected!", MB_OK);
 	while (true) {
 		if (GetAsyncKeyState(VK_OEM_3) & 0x80000) {
-			MessageBoxA(NULL, "~ pressed!", "~ pressed!", MB_OK);
+//			MessageBoxA(NULL, "~ pressed!", "~ pressed!", MB_OK);
+			Beep(750, 800);
 		}
 		Sleep(100);
 	}
